@@ -12,7 +12,7 @@ RUN npm install
 
 COPY env.js config/env/docker.js
 ENV NODE_ENV docker
-ENV MONGO_URI mongodb://localhost/pisignage-server
+ENV MONGO_URI mongodb://45.63.68.225:3000
 ENV PORT 3000
 EXPOSE 3000
 
