@@ -1,6 +1,6 @@
 FROM node:latest
 
-RUN apt-get update && apt-get install -y ffmpeg imagemagick git
+RUN apt-get update && apt-get install -y mongodb-server mongodb-client ffmpeg imagemagick git
 RUN mkdir -vp media/_thumbnails
 RUN git clone --branch 2.5.4 https://github.com/colloqi/pisignage-server /usr/src/app
 
